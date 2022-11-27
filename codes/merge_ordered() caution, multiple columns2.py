@@ -1,0 +1,6 @@
+# Merge gdp and pop on date and country with fill and notice rows 2 and 3
+ctry_date = pd.merge_ordered(gdp, pop, on=['date', 'country'],
+                             fill_method='ffill')
+
+# Print ctry_date
+print(ctry_date)
